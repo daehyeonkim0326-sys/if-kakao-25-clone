@@ -14,8 +14,8 @@ const sec03_slideInit = () => {
     let currentIndex = 0; 
     const TOTAL_SIZE = cardElem.children.length;
     // 한 페이지에 보이는 카드의 개수: math.floor(전체/300)
-    const VIEW_COUNT = Math.floor(sec03Elem,clientWidth/IMG_WIDTH);
-        left.addEventListener('click',()=>{
+    const VIEW_COUNT = Math.floor(sec03Elem.clientWidth / IMG_WIDTH);
+    left.addEventListener('click',()=>{
         currentIndex--;
         if(currentIndex <= 0){currentIndex=0;}
         listGoto();
